@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CHC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CHC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Hola ionic tanto tiempo</strong>
+    <p>CHC proyect <a target="_blank" rel="noopener noreferrer" href="http://www.chc.com.ar">CHC programacion</a></p>
+  </div>
+
+  <ion-card>
+    <img src="https://concepto.de/wp-content/uploads/2019/10/planeta-tierra-e1570462065623.jpg" alt="">
+    <ion-card-header>
+      <ion-card-subtitle>Estamos trabajando arduamente</ion-card-subtitle>
+      <ion-card-title>Aplicaciones moviles</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header> Recent Conversations </ion-list-header>
+        <ion-item *ngFor="let user of usuarios">
+          <ion-label>
+            <ion-avatar slot="start">
+              <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/avatar-default-icon.png" />
+            </ion-avatar>
+            <h2> {{user.name}}</h2>
+            <h3>{{user.username}}</h3>
+            <p>{{user.email}}</p>
+          </ion-label>
+
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+
+
+
+  </ion-card>
+
+</ion-content>
