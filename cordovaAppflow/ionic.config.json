@@ -1,0 +1,8 @@
+{
+  "name": "app-p",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "9538a19c"
+}
